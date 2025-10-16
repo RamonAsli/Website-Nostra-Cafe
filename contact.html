@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - Nostra Café</title>
+    <link rel="stylesheet" href="Cafe.css" />
+  </head>
+  <body>
+    <div class="navbar-top">JAM BUKA | SETIAP HARI: 07.00 - 21.00</div>
+    <nav class="navbar">
+      <div class="theme-toggle">
+        <button id="themeButton">🌙</button>
+      </div>
+
+      <div class="logo">
+        <img src="Gambar/Logo Final.png" alt="Logo" />
+      </div>
+      <div class="nav-links">
+        <a href="home.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html" class="active">Contact</a>
+      </div>
+    </nav>
+
+    <section class="hero" style="background-image: url('Gambar/Contact.png')">
+      <div class="hero-content">
+        <h1>Get in Touch</h1>
+        <p>
+          Kontak kami untuk ajukan pertanyaan, atau kunjungan spesial ke Nostra
+          Café
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="contact-info">
+        <h3>Informasi Kontak</h3>
+        <p>
+          <strong>Alamat:</strong> Jl. Kopi Raya No. 123, Pusat Kota, Surabaya, Indonesia 12190
+        </p>
+        <p><strong>Telepon:</strong> +62 21 12345678</p>
+        <p><strong>Email:</strong> info@Nostra_Café.com</p>
+        <p><strong>Jam Buka:</strong> Setiap hari pukul 07:00 - 21:00</p>
+      </div>
+
+      <div class="contact-form">
+        <h2>Hubungi kami</h2>
+        <input type="text" placeholder="Nama Anda" id="name" />
+        <input type="email" placeholder="Email Anda" id="email" />
+        <textarea
+          placeholder="Tulis pesan....."
+          id="message"
+          rows="5"
+        ></textarea>
+        <button onclick="submitOrder()">Kirim Pesan</button>
+        <div id="notification" class="notification"></div>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Nostra Café. Semua hak dilindungi.</p>
+    </footer>
+
+    <script src="Cafe.js"></script>
+  </body>
+</html>

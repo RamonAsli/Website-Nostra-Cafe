@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nostra Café - Beranda & Halaman</title>
+    <link rel="stylesheet" href="Cafe.css" />
+  </head>
+  <body>
+    <div class="navbar-top">JAM BUKA | SETIAP HARI: 07.00 - 21.00</div>
+    <nav class="navbar">
+      <div class="theme-toggle">
+        <button id="themeButton">🌙</button>
+      </div>
+      <div class="logo">
+        <img src="Gambar/Logo Final.png" alt="Logo" />
+      </div>
+      <div class="nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+
+    <section
+      id="index"
+      class="hero"
+      style="background-image: url('Gambar/Cafe\ rame.png')"
+    >
+      <div class="hero-content">
+        <h1>Selamat Datang di Nostra Café</h1>
+        <p>Tempat nyaman Anda untuk kopi dan pertemanan</p>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <h2>Tentang Kami</h2>
+      <p>
+        Nostra Café bukan hanya sekadar tempat menikmati kopi — ini adalah ruang
+        di mana cerita, ide, dan tawa bertemu. Terletak di jantung kota, Nostra
+        Café diciptakan untuk menjadi tempat beristirahat dari rutinitas; tempat
+        di mana aroma kopi menyapa lebih dulu sebelum kata-kata. Kami percaya,
+        secangkir kopi terbaik bukan hanya tentang rasa, tapi juga tentang
+        suasana. Dengan pencahayaan lembut, musik yang tenang, dan sudut-sudut
+        nyaman yang dipenuhi kehangatan, Nostra Café menjadi teman ideal untuk
+        siapa pun — entah kamu sedang mengejar deadline, membaca buku favorit,
+        atau berbagi obrolan ringan bersama sahabat. Barista kami meracik setiap
+        sajian dengan ketelitian dan cinta, menggunakan biji kopi pilihan dari
+        petani lokal yang berkelanjutan. Lebih dari sekadar kedai kopi, Nostra
+        Café adalah tempat di mana setiap kunjungan terasa seperti pulang.
+      </p>
+    </section>
+
+    <section id="menu" class="section">
+      <h2>Menu</h2>
+      <div class="menu-grid">
+        <div class="menu-item">
+          <img src="Gambar/iced_coffe.jpg" alt="Iced Coffee" />
+          <h3>Iced Coffee</h3>
+          <p>Rp. 27.000</p>
+          <p>
+            Kopi dingin segar dengan es batu dan sedikit susu, ideal untuk cuaca
+            panas dan kesegaran instan.
+          </p>
+        </div>
+        <div class="menu-item">
+          <img src="Gambar/cappucino.png" alt="Cappuccino" />
+          <h3>Cappuccino</h3>
+          <p>Hot Rp. 25.000, Ice Rp. 28.000</p>
+          <p>Espresso dengan susu steamed dan foam dalam jumlah yang sama.</p>
+        </div>
+        <div class="menu-item">
+          <img src="Gambar/croissant.jpg" alt="Fresh Croissant" />
+          <h3>Fresh Croissant</h3>
+          <p>Rp. 18.000</p>
+          <p>
+            Croissant mentega yang renyah dan lapisan, dibuat terbaru setiap
+            hari.
+          </p>
+        </div>
+        <div class="menu-item">
+          <img src="Gambar/bluberry_muffin.jpg" alt="Blueberry Muffin" />
+          <h3>Blueberry Muffin</h3>
+          <p>Rp. 23.000</p>
+          <p>Muffin lembut yang penuh dengan blueberry segar.</p>
+        </div>
+      </div>
+      <a href="menu.html" class="see-all-btn">Lihat Semua Menu</a>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Hubungi Kami</h2>
+      <p>Jl. Kopi Raya No. 123, Pusat Kota, Surabaya, Indonesia 12190</p>
+      <div class="contact-form">
+        <input type="text" placeholder="Nama" id="name" />
+        <input type="email" placeholder="Email" id="email" />
+        <textarea
+          placeholder="Tulis pesan....."
+          id="message"
+          rows="5"
+        ></textarea>
+        <button onclick="submitOrder()">Kirim Pesan</button>
+        <div id="notification" class="notification"></div>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Nostra Café. Semua hak dilindungi.</p>
+    </footer>
+
+    <script src="Cafe.js"></script>
+  </body>
+</html>
